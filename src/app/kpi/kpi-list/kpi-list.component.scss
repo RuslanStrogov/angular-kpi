@@ -1,7 +1,3 @@
-//app-kpi-list {
-//
-//  padding: 10px;
-//}
 app-kpi-item {
   display: inline-block;
   width: 200px;
@@ -13,11 +9,9 @@ app-kpi-item {
   color: #4c4c4c;
   box-shadow: 0 0 3px #dddddd;
   transition: all .5s;
+  cursor: pointer;
   &:hover {
     box-shadow: 0 0 3px #66c5ef;
-    //&:not(.disabled) {
-    //  box-shadow: none;
-    //}
     .disabled {
       box-shadow: none;
     }
