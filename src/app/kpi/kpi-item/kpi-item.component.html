@@ -2,7 +2,9 @@
 <div class="kpi-item-visitors" *ngIf="item.value">{{item.value}}<span>{{item.valueOption}}</span></div>
 <div class="kpi-item-visitors" *ngIf="!item.value">-</div>
 <div class="kpi-item-updated" *ngIf="!item.value">&mdash; Нет данных</div>
-<div class="kpi-item-changes" *ngIf="item.value">
-    <div class="changes-icon">UP</div>
-    <div class="changes-value">+7.00%</div>
+<div class="kpi-item-changes" *ngIf="item.updatesValue">
+    <div class="changes-icon icon-up" *ngIf="item.updatesVector == 'up'">&#8679;</div>
+    <div class="changes-icon icon-down" *ngIf="item.updatesVector == 'down'">&#8681;</div>
+    <div class="changes-icon icon-right" *ngIf="item.updatesVector == 'right'">&#8680;</div>
+    <div class="changes-value">{{item.updatesValue}}+ 7.00%</div>
 </div>

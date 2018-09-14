@@ -4,4 +4,6 @@ export class Kpi {
     public value?: number;
     public valueOption?: string;
     public selected?: boolean;
+    public updatesVector?: string;
+    public updatesValue?: string;
 }

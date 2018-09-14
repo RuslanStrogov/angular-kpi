@@ -42,8 +42,6 @@ export class KpiEditFormComponent implements OnInit {
         });
         //Change listener
         this.editForm.controls['itemValue'].valueChanges.subscribe(() => {
-                console.log('this.editForm.value', this.editForm.value.itemValue);
-                console.log('this.editForm.get(itemValue).value', this.editForm.get('itemValue').value);
                 if(this.editForm.value.itemValue && this.editForm.get('itemValue').value && this.editForm.value.itemValue != this.editForm.get('itemValue').value) {
                     this.kpiService.calculateUpdates(this.kpi, this.editForm.get('itemValue').value);
                 }
