@@ -1,0 +1,22 @@
+.kpi-item-title {
+  text-transform: uppercase;
+  line-height: 3em;
+  overflow: hidden;
+  max-height: 40px;
+}
+.kpi-item-visitors {
+  font-size: 1.1rem;
+  line-height: 1.8em;
+  overflow: hidden;
+  max-height: 40px;
+  span {
+    color: #dbdbdb;
+    margin-left: 5px;
+  }
+}
+.kpi-item-changes {
+  font-size: .9em;
+  div {
+    display: inline-block;
+  }
+}

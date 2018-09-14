@@ -1,0 +1,34 @@
+//app-kpi-list {
+//
+//  padding: 10px;
+//}
+app-kpi-item {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  padding: 2.5px;
+  margin: 2.5px 5px;
+  color: #4c4c4c;
+  box-shadow: 0 0 3px #dddddd;
+  transition: all .5s;
+  &:hover {
+    box-shadow: 0 0 3px #66c5ef;
+    //&:not(.disabled) {
+    //  box-shadow: none;
+    //}
+    .disabled {
+      box-shadow: none;
+    }
+  }
+  &.selected {
+    border-color: #66c5ef;
+    box-shadow: 0 0 3px #66c5ef;
+  }
+  &.disabled {
+    background: #f1f1f1;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}

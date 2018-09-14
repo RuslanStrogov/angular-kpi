@@ -1,3 +1,8 @@
-<p>
-  kpi-item works!
-</p>
+<div class="kpi-item-title">{{item.title}}</div>
+<div class="kpi-item-visitors" *ngIf="item.value">{{item.value}}<span>{{item.valueOption}}</span></div>
+<div class="kpi-item-visitors" *ngIf="!item.value">-</div>
+<div class="kpi-item-updated" *ngIf="!item.value">&mdash; Нет данных</div>
+<div class="kpi-item-changes" *ngIf="item.value">
+    <div class="changes-icon">UP</div>
+    <div class="changes-value">+7.00%</div>
+</div>

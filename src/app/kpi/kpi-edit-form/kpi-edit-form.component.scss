@@ -1,0 +1,27 @@
+.form-header {
+  border-bottom: 1px solid #dddddd;
+}
+
+.form-group {
+  padding: 15px;
+  .center-block {
+    display: block;
+    margin: 0 10px 10px;
+    position: relative;
+    .form-control {
+      font-size: 1.4em;
+      padding: 5px 15px;
+    }
+    select {
+      position: absolute;
+      right: 0;
+      border: none;
+      margin: 2px;
+    }
+  }
+}
+
+//input {
+//  font-size: 1.4em;
+//  padding: 0 15px;
+//}

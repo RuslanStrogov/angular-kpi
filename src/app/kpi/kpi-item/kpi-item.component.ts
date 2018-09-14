@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'kpi-item',
-  templateUrl: './kpi-item.component.html',
-  styleUrls: ['./kpi-item.component.scss']
+    selector: 'app-kpi-item',
+    templateUrl: './kpi-item.component.html',
+    styleUrls: ['./kpi-item.component.scss']
 })
 export class KpiItemComponent implements OnInit {
 
-  constructor() { }
+    @Input() public item;
 
-  ngOnInit() {
-  }
+    constructor() {}
+
+    ngOnInit() {
+    }
 
 }

@@ -1,3 +1,6 @@
-<p>
-  kpi-list works!
-</p>
+<app-kpi-item
+        *ngFor="let item of kpis | slice:0:itemsLimit"
+        [item]="item"
+        [ngClass]="{'selected': item.selected, 'disabled': (!item.value || !item.valueOption)}"
+        (click)="onItemSelect($event, item)"
+></app-kpi-item>
